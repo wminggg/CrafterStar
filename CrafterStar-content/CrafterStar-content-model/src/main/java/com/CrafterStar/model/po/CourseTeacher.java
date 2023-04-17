@@ -1,4 +1,4 @@
-package com.crafterstar.model.po;
+package com.CrafterStar.model.po;
 
 import com.baomidou.mybatisplus.annotation.*;
 import lombok.Data;

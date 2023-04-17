@@ -1,5 +1,6 @@
-package com.crafterstar.base.model;
+package com.CrafterStar.base.model;
 
+import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 import lombok.ToString;
 
@@ -15,15 +16,20 @@ import lombok.ToString;
 //使用 @ToString 注解可以使得打印对象时输出的信息更加详细、清晰。
 @ToString
 public class PageParams {
-    //当前页码
-    private Long pageNo = 1L;
-    //每页显示记录数
-    private Long pageSize = 30L;
 
-    public PageParams() {
+    //当前页码
+    @ApiModelProperty("当前页码")
+    private Long pageNo = 1L;
+
+    //每页记录数默认值
+    @ApiModelProperty("每页记录数默认值")
+    private Long pageSize =10L;
+
+    public PageParams(){
+
     }
 
-    public PageParams(Long pageNo, Long pageSize) {
+    public PageParams(Long pageNo,Long pageSize){
         this.pageNo = pageNo;
         this.pageSize = pageSize;
     }

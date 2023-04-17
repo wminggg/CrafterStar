@@ -1,4 +1,4 @@
-package com.crafterstar.content.api;
+package com.CrafterStar.content.api;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
